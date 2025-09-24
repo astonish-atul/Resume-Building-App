@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.container {
+    
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    background-color: #f1f1f1;
+    color: #555;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.file-upload input[type="file"]+span {
+    margin-left: 5px;
+}
+
+button[type="button"],
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    height: 10vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#skillsContainer,
+#educationContainer,
+#experienceContainer,
+#achievementsContainer {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Carousel Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    /*z-index: 100;*/
+}
+form{
+    position: relative;
+    top: 60px;
+
+
+}
+.carousel {
+    position: sticky;
+    top: 56px; /* Adjust the value to match the height of your navbar */
+    height: 80vh;/* Adjust the value to account for navbar height */
+    background-color: transparent; 
+    border: none; 
+}
+
+.highlight {
+    /* Define the styles to highlight the carousel text */
+    /* For example, you can change the background color and text color */
+    background-color: yellow;
+    color: black;
+}
+
+.carousel-inner img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 80vh; /* Adjust the percentage to your desired height */
+    width: auto;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+
+
+.carousel-caption {
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .carousel {
+    position: relative;
+    top: initial;
+    }
+}
